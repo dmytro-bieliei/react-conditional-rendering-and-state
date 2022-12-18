@@ -3,13 +3,13 @@ import Message from "./components";
 
 const user = {
   name: "Anton",
-  email: "anton@mail.com",
+  message: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, nulla.", 
 };
 
 function App() {
   return (
     <article className="MessageArticle">
-      <Message sender={user} />
+      <Message sender={user} message={user} />
     </article>
   );
 }

@@ -17,16 +17,15 @@ class Message extends Component {
 
   render() {
     const {
-      sender: { name },
+      sender: { name, message },
+
     } = this.props;
     console.log(name);
     return (
       <article>
         <p>Sender: {name}</p>
         <p className="TextMessage">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          perferendis a deleniti odio facilis facere aspernatur, aperiam
-          veritatis porro
+          {message}
         </p>
         <p>
           {this.state.isRead ? "Message has been read" : "Message not read"}
