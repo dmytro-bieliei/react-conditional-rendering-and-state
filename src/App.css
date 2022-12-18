@@ -29,22 +29,15 @@
 
 
 .Button {
-  padding: 30px;
+  padding: 20px;
   border-radius: 15px;
   border: 0px;
   background-color: rgb(40, 149, 245);
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
 
 }
 
-.UnreadButton {
-
-}
-
-.ReadButton {
-
-}
 
 
 /* @keyframes App-logo-spin {
