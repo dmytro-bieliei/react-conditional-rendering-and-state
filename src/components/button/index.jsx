@@ -2,10 +2,22 @@ import React from "react";
 import { Component } from "react";
 
 class Button extends Component {
-  render () {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isRead: false,
+    };
+  }
+
+  
+
+  render() {
     return (
-      <button className="Button">Read</button>
-    )
+      <button className="Button" onClick={this.handleClick}>
+        Read message
+      </button>
+    );
   }
 }
 
