@@ -1,12 +1,15 @@
 import "./App.css";
 import Message from "./components";
-// import Button from "./components/button";
+
+const user = {
+  name: "Anton",
+  email: "anton@mail.com",
+};
 
 function App() {
   return (
     <article className="MessageArticle">
-      <Message />
-      {/* <Button /> */}
+      <Message sender={user} />
     </article>
   );
 }
